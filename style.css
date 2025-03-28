@@ -1,0 +1,244 @@
+/* for fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/* for icons */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+:root{
+    --color-acent:#FF5722;
+    --color-decent:#283593;
+    --primary-color:#869096;
+    --secondary-color:#24b2f4;
+}
+
+/* Root Elements */
+html{
+    font-size: 10px;
+    font-family: "Inter", 'Times New Roman', sans-serif;
+}
+
+/* headings */
+h1{
+    font-size: 5rem;
+    font-weight: 700;
+    color: black;
+}
+h2{
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--color-decent);
+}
+h3{
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--color-decent);
+}
+
+/* Text */
+p{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--primary-color);
+}
+
+/* Rupee Badges */
+.rupee-badge{
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin: 1rem 2rem;
+    padding: 0.5rem 1.5rem;
+    border-radius: 2rem;
+    transition: all 0.8s ease;
+}
+.rupee-badge:hover{
+    background: #29B6F6;
+    color: white;
+}
+.rupee-icon{
+    font-size: 1.8rem;
+}
+
+/* Discount Badges */
+
+.discount-badge{
+    font-size: 1.7rem;
+    font-weight: 500;
+    margin: 1rem 1.8rem;
+    padding: 0.7rem 1.5rem;
+    border-radius: 2rem;
+    color: white;
+    background-color: #5bc2f1;
+}
+.best-discount-badge{
+    background-color: #5165f9;
+}
+
+/* Activate Link */
+.activate-link{
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: var(--color-acent);
+
+    transition: all 0.7s ease;
+}
+.activate-link:hover::after{
+    content: " ->";
+    font-size: 2rem;
+    font-weight: 700;
+}
+.activation-link{
+    text-decoration: none;
+}
+/* List and Ticks */
+.list{
+    list-style: none;
+}
+.bi-check{
+    color: rgb(25, 186, 25);
+    font-size: 3rem;
+}
+.list .list-item{
+    color: var(--color-decent);
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+/* Buttons */
+/* starting button */
+.starting{
+    font-family: 'Inter',sans-serif;
+    font-size: 1.7rem;
+    font-weight: 500;
+    background: var(--color-acent);
+    color: white;
+    padding: 1.5rem 4.5rem;
+    border: 0px transparent;
+    border-radius: 3rem;
+    transition: all 0.8s ease;
+}
+.starting:hover{
+    color: var(--color-acent);
+    font-weight: 600;
+    background-color: white;
+    padding: 1.4rem 4rem;
+    border: 0.2rem solid var(--color-acent);
+}
+.ending{
+    font-family: 'Inter', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--color-decent);
+    background-color: white;
+    padding: 1.2rem 6rem;
+    border: 0.2rem solid var(--color-decent);
+    border-radius: 2rem;
+    transition: all 0.8s ease;
+}
+.ending:hover{
+    color: white;
+    font-weight: 600;
+    padding: 1.1rem 5.9rem;
+    background-color: var(--color-decent);
+}
+
+/* Money Cards */
+/* Footer for the class */
+.footer-class{
+    display: inline-block;
+    width: 100%;
+    height: 25rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    background: black;
+    border: 1px solid black;
+}
+.footer-class ul{
+    float: left;
+    list-style: none;
+    align-items: center;
+}
+
+/* Icon Tag */
+.icon-con{
+    width: 9rem;
+    height: 8rem;
+    background: rgb(226, 233, 235);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.computer-icon{
+    width: 6rem;
+    fill: #139fe0;
+}
+
+/* Meta Panel */
+.meta-panel{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 2rem;
+    padding-left: 0;
+}
+.meta-panel .icon-con{
+    margin: 0px 1rem;
+    background: black;
+}
+.meta-panel .growth-icon{
+    width: 5rem;
+    fill: var(--color-decent);
+}
+.meta-panel .panel-desc{
+    width: 40rem;
+}
+.meta-panel .panel-desc h3{
+    margin: 0px;
+    color: white;
+}
+.meta-panel .panel-desc p{
+    margin: 5px;
+}
+
+/****************************************************************/
+.main-con{
+    border: 1px solid black;
+    text-align: center;
+    padding: 15rem 5rem;
+}
+.charts-con h2{
+    text-align: center;
+    margin-top: 0;
+    color: white;
+}
+.main-con h2
+{
+    margin-bottom: 0;
+}
+
+.items-con{
+    border: 1px solid black;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 6fr 6fr;
+    grid-template-rows: 4fr 4fr 4fr;
+}
+.items-con .items{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+}
+.items
+/****************************************************************/
+.charts-con{
+    border: 1px solid black;
+    padding: 8rem 5rem;
+    background: black;
+}
+.chart-con{
+   display: grid;
+   grid-template-columns: 6fr 6fr;
+   justify-content: center;
+   align-items: center;
+}
